@@ -1,6 +1,6 @@
 const decimalToBinary = require("./index");
 describe("Decimal to binary", () => {
-  it("should return a valid binary value when decimal values is valid", () => {
+  it("should return a valid binary value from decimal", () => {
     expect(decimalToBinary(0)).toBe(0);
     expect(decimalToBinary(1)).toBe(1);
     expect(decimalToBinary(2)).toBe(10);
@@ -13,7 +13,7 @@ describe("Decimal to binary", () => {
     expect(decimalToBinary(9)).toBe(1001);
   });
 
-  it("should return zero when decimal value is invalid", () => {
+  it("should return zero when have a invalid decimal", () => {
     expect(decimalToBinary()).toBe(0);
     expect(decimalToBinary(null)).toBe(0);
   });
